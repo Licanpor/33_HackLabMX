@@ -4,13 +4,240 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<meta charset="UTF-8">
 		<title>Document</title>
-		<link rel="stylesheet" href="css/bootstrap.min.css"\>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/formulario.css">
 		<link rel="stylesheet" href="css/animated.css">
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 	</head>
 	<body>
-		
-
+		<div class="container-fluid">
+			<header>
+				<div class="row bg-topoapp"> <!-- parte en donde va el nombre de la app -->
+					<div class="col-xs-12">
+						<h1 class="text-center">TopoApp</h1>
+					</div>
+				</div>			
+			</header>
+			<section>
+				<div class="row mt-5"> <!-- Leyenda de uso de datos -->
+					<div class="col-xs-12">
+						<h2 class="text-center orange">TopoApp unicamente utilizará estos datos en caso de emergencia.</h2>
+					</div>
+				</div>
+				<form class="mt-5"> <!-- aqui empieza el formulario -->
+					<div class="row"> <!-- Parte de usuario y contraseña -->
+						<div class="col-xs-4"> <!-- Foto de perfil -->
+							<a href="#">
+								<img class="img-responsive center-block" src="images/profile.png" alt="FotodePerfil">
+							</a>
+							<label for="inputFotodePerfil" class="orange text-center">Elige una foto en la que tu cara se vea claramente.</label>
+						</div>
+						<div class="col-xs-4">
+							<div class="input-group"> <!-- Usuario -->
+               				 	<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                				<input type="text" class="form-control" placeholder="Nombre de usuario">
+            				</div>
+						</div>
+						<div class="col-xs-4">
+							<div class="input-group"> <!-- Contraseña -->
+               				 	<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                				<input type="text" class="form-control" placeholder="Contraseña">
+            				</div>
+						</div>
+					</div>
+					<div class="row"> <!-- Parte nombre completo -->
+						<div class="col-xs-12">
+							<div class="form-group">
+         						<label for="inputNombrecompleto" class="orange">Nombre completo</label>
+         						<input type="name" class="form-control">
+     						</div>
+						</div>
+					</div>
+					<div class="row"> <!-- Parte CURP -->
+						<div class="col-xs-12">
+							<div class="form-group">
+         						<label for="inputCURP" class="orange">CURP</label>
+         						<input type="CURP" class="form-control">
+     						</div>
+						</div>
+					</div>
+					<div class="row"> <!-- Parte edad -->
+						<div class="col-xs-4">
+							<div class="form-group">
+								<label for="inputEdad" class="orange">Edad</label>
+         						<input type="edad" class="form-control">
+     						</div>
+						</div>
+						<div class="col-xs-4"> <!-- Parte sexo -->
+							<div class="form-group">
+								<div class="row">
+									<div class="col-xs-12">
+										<label for="inputSexo" class="orange">Sexo</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6">
+										<label class="radio-inline">
+                							<input type="radio" name="genderRadios" value="male"> 
+                							<span class="orange">Hombre</span>
+            							</label>
+									</div>
+									<div class="col-xs-6">
+										<label class="radio-inline">
+                							<input type="radio" name="genderRadios" value="female"> 
+                							<span class="orange">Mujer</span>
+            							</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-4"> <!-- Parte Tipo de sangre -->
+							<div class="form-group">
+								<label for="btnTiposdeSangre" class="orange">Tipo de Sangre</label>
+                    			<select class="selectpicker">
+  									<option value="A+">A+</option>
+  									<option value="A-">A-</option>
+  									<option value="B+">B+</option>
+  									<option value="B-">B-</option>
+  									<option value="O+">O+</option>
+  									<option value="O-">O-</option>
+  									<option value="AB+">AB+</option>
+  									<option value="AB-">AB-</option>
+								</select>
+                			</div>
+						</div> 
+					</div>
+					<div class="row"> <!-- Parte de alergias -->
+						<div class="col-xs-12">
+							<div class="form-group">
+								<label for="inputAlergias" class="orange">Alergías</label>
+								<input type="Alergias" class="form-control">
+							</div>
+						</div>
+					</div>
+					<div class="row"> <!-- Parte de Otros padecimientos.... -->
+						<div class="col-xs-12">
+							<div class="form-group">
+								<label for="inputOtrosPadecimientos" class="orange">Otros padecimientos....</label>
+								<input type="Padecimientos" class="form-control">
+							</div>
+						</div>
+					</div>
+					<div class="row"> <!-- Contactos de emergencia -->
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="col-xs-12">
+									<label for="inputContactos" class="orange">Elige 5 contactos de emergencia</label>
+								</div>
+							</div>
+							<div class="row"> <!-- Contazto1 -->
+								<div class="col-xs-6"> <!-- Nombre contacto1 -->
+									<div class="form-group">
+        								<label class="sr-only" for="inputContacto1">Contacto1</label>
+        								<input type="nombre" class="form-control" placeholder="Nombre">
+    								</div>
+								</div>
+								<div class="col-xs-6"> <!-- Numero de telefono Contacto1 -->
+									<div class="form-group">
+        								<input type="numerodetelefono" class="form-control" placeholder="Número de teléfono">
+    								</div>
+								</div>
+							</div>
+							<div class="row"> <!-- Contacto2 -->
+								<div class="col-xs-6"> <!-- Nombre contacto2 -->
+									<div class="form-group">
+        								<label class="sr-only" for="inputContacto1">Contacto2</label>
+        								<input type="nombre" class="form-control" placeholder="Nombre">
+    								</div>
+								</div>
+								<div class="col-xs-6"> <!-- Numero de telefono Contacto2 -->
+									<div class="form-group">
+        								<input type="numerodetelefono" class="form-control" placeholder="Número de teléfono">
+    								</div>
+								</div>
+							</div>
+							<div class="row"> <!-- Contacto3 -->
+								<div class="col-xs-6"> <!-- Nombre contacto3 -->
+									<div class="form-group">
+        								<label class="sr-only" for="inputContacto1">Contacto3</label>
+        								<input type="nombre" class="form-control" placeholder="Nombre">
+    								</div>
+								</div>
+								<div class="col-xs-6"> <!-- Numero de telefono Contacto3 -->
+									<div class="form-group">
+        								<input type="numerodetelefono" class="form-control" placeholder="Número de teléfono">
+    								</div>
+								</div>
+							</div>
+							<div class="row"> <!-- Contacto4 -->
+								<div class="col-xs-6"> <!-- Nombre contacto4 -->
+									<div class="form-group">
+        								<label class="sr-only" for="inputContacto1">Contacto4</label>
+        								<input type="nombre" class="form-control" placeholder="Nombre">
+    								</div>
+								</div>
+								<div class="col-xs-6"> <!-- Numero de telefono Contacto4 -->
+									<div class="form-group">
+        								<input type="numerodetelefono" class="form-control" placeholder="Número de teléfono">
+    								</div>
+								</div>
+							</div>
+							<div class="row"> <!-- Contacto5 -->
+								<div class="col-xs-6"> <!-- Nombre contacto3 -->
+									<div class="form-group">
+        								<label class="sr-only" for="inputContacto1">Contacto5</label>
+        								<input type="nombre" class="form-control" placeholder="Nombre">
+    								</div>
+								</div>
+								<div class="col-xs-6"> <!-- Numero de telefono Contacto5 -->
+									<div class="form-group">
+        								<input type="numerodetelefono" class="form-control" placeholder="Número de teléfono">
+    								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row"> <!-- Parte de conectar redes sociales -->
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="col-xs-12">
+									<h4 class="text-center orange">Conectar con:</h4>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6"> <!-- conectar con facebook -->
+									<a href="#">
+										<img class="img-responsive center-block" src="images/facebook.png" alt="Facebook">
+									</a>
+								</div>
+								<div class="col-xs-6"> <!-- conectar con Twitter -->
+									<a href="#">
+										<img class="img-responsive center-block" src="images/twitter.png" alt="Twitter">
+									</a>	
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-5"> <!-- Parte acepto terminos y condiciones -->
+						<div class="col-xs-12">
+							<div class="form-group">
+            					<label class="checkbox-inline center-block">
+                					<input type="checkbox" value="agree"> Acepto <a href="#">Términos y condiciones</a>.
+            					</label>
+        					</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="form-group">
+								<a href="modals.html"><input class="btn btn-ms bg-topoapp center-block" value="Enviar"></a>
+							</div>
+						</div>
+					</div>
+				</form>
+			</section>
+		</div>
 		<script src="js/jquery.js"></script>
 		<script src="js/jquery.easing.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>

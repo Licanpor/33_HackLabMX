@@ -3,21 +3,60 @@
 	<head>
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<meta charset="UTF-8">
-		<title>Document</title>
-		<link rel="stylesheet" href="css/bootstrap.min.css"\>
-		<link rel="stylesheet" href="css/animated.css">
-		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<title>TOPOAPP</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"\>
+		<link rel="stylesheet" href="css/animat.css">
+		<link rel="stylesheet" href="css/modals.css">
+		<link rel="stylesheet" href="css/common.css">
 	</head>
 	<body>
-		
+		<div class="container-fluid">
+			<header>
+				<div class="row bg-topoapp"> <!-- parte en donde va el nombre de la app -->
+					<div class="col-xs-12">
+						<h1 class="text-center">TopoApp</h1>
+					</div>
+				</div>			
+			</header>
+			<div class="row background_map img-responsive">
+				<div class="col-xs-12">
 
+					<div class="mensaje text-center margin-top center-block padding-top-bottom" id="forTest">
+						<h3>¡HOLA!</h3>
+						<p><strong>Topoapp acederá a tu ubicacion <br>aunque la aplicación no este en uso</strong></p>
+						<button class="btn btn-danger">Cancel</button>
+						<a href="#ventana" class="btn btn-success" data-toggle="modal">Ok</a>
+						<div class="modal fade" id="ventana"> 
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<div class="modal-body">
+											<h4>Topoapp esta activada</h4>
+											<p>En caso de sismo topobot te alertará</p>
+										</div>
+										<div class="modal-footer">
+											<a href="mapa.html"><button type="button" class="btn btn-warning center-block">Ok</button></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+		<!-- LINKS JAVA SCRIPT -->
 		<script src="js/jquery.js"></script>
-		<script src="js/jquery.easing.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/bootstrap-hover-dropdown.min.js"></script>
+		<!-- <script src="js/jquery.easing.min.js"></script> -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+		<!-- <script src="js/bootstrap-hover-dropdown.min.js"></script>
 		<script src="js/respond.js"></script>
 		<script src="js/nav-scroll.js"></script>
-	    <script src="js/menu-scroll.js"></script>
+	    <script src="js/menu-scroll.js"></script> -->
 	    
 	</body>
 </html>
