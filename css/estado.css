@@ -1,0 +1,27 @@
+.bg-img{
+	background-image: url("../images/lockscreen.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position:center top;
+	max-width: 100%;
+}
+.bg-blanco{
+	background-color:white;
+	margin-top:70%;
+	margin-bottom:70%;
+	padding-bottom:4%;
+	padding-top:4%;
+	padding-left:4%;
+	border-radius: 2em;
+}
+.emoji-size{
+	height: 50%;
+	width:50%;
+}
+p{
+	font-size: 200%;
+}
+.mg-top{
+	margin-top: 3%;
+}
+
