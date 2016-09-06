@@ -1,1 +1,10 @@
-/*NO ESTOY LINKEADO, LINKEAME*/
+.bg-blanco{
+	background-color: white;
+	margin-top: 70%;
+	margin-bottom: 70%;
+	padding-bottom: 4%;
+	padding-top: 4%;
+	padding-left: 4%;
+	border-radius: 2em;
+}
+
