@@ -1,0 +1,12 @@
+.fondo{
+	background-image: url(../images/lockscreen.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+span{
+	font-size: 150%;
+}
+.margin-btn{
+	margin-left: 16%;
+}
