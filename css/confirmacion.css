@@ -8,9 +8,7 @@ span{
 	font-size: 150%;
 }
 .ok{
-	margin-left: 45%;
-}
-a:hover{
-	text-decoration: none;
-
+	margin-left: 33%;
+	width: 30%;
+	padding: 2%;
 }
